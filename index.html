@@ -3,47 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PiCart</title>
+    <title>PiCart - Your One-Stop Shop</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    
-    <div class="header">
-    <div class="container">
-        <div class="navbar">
-            <div class="logo">
-                <a href="index.html"></a><img src="https://pnggrid.com/wp-content/uploads/2024/11/Amazon-Logo-Transparent-1536x308.png" width="125px"></a>
-            </div>
-            <nav>
-                <ul id="MenuItems">
-                    <li><a href="C:/Users/Dell/Desktop/wap ec new/index.html">Home</a></li>
-                    <li><a href="C:/Users/Dell/Desktop/wap ec new/Fashion.html">Fashion</a></li>
-                    <li><a href="C:/Users/Dell/Desktop/wap ec new/Electronics.html">Electronics</a></li>
-                    <li><a href="about us.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="account.html">Account</a></li>
-                </ul>
-        </nav>  
-        <a href="cart.html"><img src="cart.png" width="30px" height="30px"></a>
-        <img src="C:/Users/Dell/Desktop/RedStore_Img/images/menu.png" class="menu-icon"
-        onclick="menutoggle()">
-    </div>
-    <div style="margin-top:0px;" class="row">
-        <div class="col-2">
-            <h1>Give Your Workout<br>A New Style!</h1>
-            <p>Success isn't always about greatness. It's about consistency.<br>Consistent hard work gains success. Greatness will come.</p>
-            <a href="" class="btn">Explore Now &#8594;</a>
-        </div>
-        <div class="col-2">
-            <img style="height:750px;width:800px;" src="https://imgs.search.brave.com/gLkqbw3PS2s6x0EnaIuvjFohOJuljWC_brhPcefCcHU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nbWFydC5jb20v/ZmlsZXMvMi9Dcmlz/dGlhbm8tUm9uYWxk/by1UcmFuc3BhcmVu/dC1CYWNrZ3JvdW5k/LnBuZw">
-        </div>
-    </div>
-    </div>
-</div>
 
-    <!--------feature categories-------->
+    <!-- HEADER / NAVIGATION -->
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="#"><img src="https://pnggrid.com/wp-content/uploads/2024/11/Amazon-Logo-Transparent-1536x308.png" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="#" onclick="showSection('sectionHome')">Home</a></li>
+                        <li><a href="#" onclick="showSection('sectionFashion')">Fashion</a></li>
+                        <li><a href="#" onclick="showSection('sectionElectronics')">Electronics</a></li>
+                        <li><a href="#" onclick="showSection('sectionAbout')">About</a></li>
+                        <li><a href="#" onclick="showSection('sectionContact')">Contact</a></li>
+                        <li><a href="#" onclick="showSection('sectionAccount')">Account</a></li>
+                        <li><a href="#" onclick="showSection('sectionCart')">Cart</a></li>
+                    </ul>
+                </nav>
+                <a href="#" onclick="showSection('sectionCart')"><img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" width="30px"></a>
+                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+
+    <!-- HOME SECTION -->
+    <div id="sectionHome" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <h1>Give Your Workout<br>A New Style!</h1>
+                    <p>Success isn't always about greatness. It's about consistency.<br>Consistent hard work gains success. Greatness will come.</p>
+                    <a href="#" class="btn" onclick="showSection('sectionFashion')">Explore Now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img style="height:750px;width:800px;" src="https://imgs.search.brave.com/gLkqbw3PS2s6x0EnaIuvjFohOJuljWC_brhPcefCcHU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nbWFydC5jb20v/ZmlsZXMvMi9Dcmlz/dGlhbm8tUm9uYWxk/by1UcmFuc3BhcmVu/dC1CYWNrZ3JvdW5k/LnBuZw">
+                </div>
+            </div>
+        </div>
         <div class="categories">
             <div class="small-container">
                 <div class="row">
@@ -57,11 +61,8 @@
                         <img style="margin-left:20px;height:300px;width: 200px;" src="https://imgs.search.brave.com/b6_epBq0RnKcmoViNu7gBDqM6DMvl8zO8HUR2rQ6GnM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nbWFydC5jb20v/ZmlsZXMvMjIvVC1T/aGlydC1UcmFuc3Bh/cmVudC1QTkcucG5n">
                     </div>
                 </div>
-            </div>
-            
+            </div> 
         </div>
-
-    <!--------feature products------->
         <div class="small-container">
             <h2 class="title">Featured Products</h2>
             <div class="row">
@@ -115,7 +116,7 @@
                 </div>
             </div>
         </div>
-    <!--------latest products------->
+        <div class="small-container">
             <h2 class="title">Latest products</h2>
             <div class="row">
                 <div style="text-align:center;" class="col-4">
@@ -166,209 +167,331 @@
                     </div>
                     <p>$70.00</p>
                 </div>
+                
+            </div>
+        </div>
+        <div class="offer">
+            <div class="small-container">
                 <div class="row">
-                    <div style="text-align:center;" class="col-4">
-                        <img style="height:250px;width: 150px;" src="https://imgs.search.brave.com/xa4gVX-PSXHRwfaUpwM9tcTF1Dr9Dcwlc8IZpGU4DrQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90YXJn/ZXQuc2NlbmU3LmNv/bS9pcy9pbWFnZS9U/YXJnZXQvR1VFU1Rf/ZDc0MjQ2MmItZDc2/Ny00OGVhLWJhMDAt/YzM5ZmE5OGY2ZjZm/P3dpZD04MDAmaGVp/PTgwMCZxbHQ9ODAm/Zm10PXBqcGVn">
-                        <h4>Galaxy Watch4</h4>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                        </div>
-                        <p>$70.00</p>
+                    <div class="col-2">
+                        <img src="https://imgs.search.brave.com/7oCvYFHTlqrtO2e9xagFELUSkyFXdRPa-KfE1lF5P6M/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NDErWTFvejRUTUwu/anBn" class="offer-img">
                     </div>
-                    <div style="text-align:center;" class="col-4">
-                        <img style="height:250px;width: 150px;" src="https://imgs.search.brave.com/teHB3cOrzLIIOGvFNC_Lc8Mt4qRa2aCPILhqzYz97p0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/ODFad2pzTFFZVEwu/anBn">
-                        <h4>Puma Grip Golf Shoes</h4>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-half-o"></i>
-                            <i class="fa fa-star-o"></i>
-                        </div>
-                        <p>$90.00</p>
+                    <div class="col-2">
+                        <p>Exclusively Available On Amazon</p>
+                        <h1>Smart Band 4</h1>
+                        <small>The Mi Smart Band 4 features a 40% larger
+                            (than Mi Band 3) AMOLED color full-touch display with
+                            adjustable brightness, so everything is clear as can
+                             be.</small>
+                             <br>
+                             <a href="" class="btn">Buy Now &#8594;</a>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="brands">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <img src="https://imgs.search.brave.com/kiPgS3PJilewW0FvNb7sRLAgwTdwg-6_TcXLCS1jK30/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zZWVr/bG9nby5jb20vaW1h/Z2VzL0cvR29kcmVq/LWxvZ28tQTM0MDdC/RTI2Qi1zZWVrbG9n/by5jb20ucG5n">
                     </div>
-                    <div style="text-align:center;" class="col-4">
-                        <img style="height:250px;width: 150px;" src="https://imgs.search.brave.com/V2GSqy0KpeJn1QjuZIMpcW-scDecpocZaOYclciyNqo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9lbGV2/YXJzcG9ydHMuY29t/L2Nkbi9zaG9wL3By/b2R1Y3RzL0VsZXZh/cl9TcG9ydHNfTWVu/X0ZMeWJvbHRfTWlk/bmlnaHRfQmx1ZV9L/bml0X0ZvY3VzLW1p/bl8xNDQ1eC5wbmc_/dj0xNjk0OTM0NzU0">
-                        <h4>Men's Flybolt</h4>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-half-o"></i>
-                        </div>
-                        <p>$90.00</p>
+                    <div class="col-5">
+                        <img src="https://imgs.search.brave.com/gJeGGe9AzSU2OaSG_w373ezUeOhRmbtnNb4z-9zMEsI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9wYXlwYWwtbG9n/by1kZXNpZ25fMTMx/NTk3MS0zMjM5Lmpw/Zz9zZW10PWFpc19o/eWJyaWQ">
                     </div>
-                    <div style="text-align:center;" class="col-4">
-                        <img style="height:250px;width: 150px;" src="https://imgs.search.brave.com/FR722Qp88j-R1qQ8b2NyzpuePMMke3GFTeF7m_P90ew/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NDExWURrd2IxeUwu/anBn">
-                        <h4>Aldon Pant</h4>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                        </div>
-                        <p>$50.00</p>
+                    <div class="col-5">
+                        <img src="https://imgs.search.brave.com/Fu99r2eAbJMpxi5XqJYKs92Q-jqxJPkOFdTX3PO3hss/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/bW9zLmNtcy5mdXR1/cmVjZG4ubmV0Lzhz/dEg1UVpRcmlvd1Jk/emlZcEs2U1ktMTAw/MC04MC5qcGc">
+                    </div>
+                    <div class="col-5">
+                        <img src="https://imgs.search.brave.com/6Gm5hAj1bc2klEhYM65hc2LcfMo7BUR3T09kVQrYMVw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sb2dv/d2lrLmNvbS9jb250/ZW50L3VwbG9hZHMv/aW1hZ2VzL29wcG8u/anBn">
+                    </div>
+                    <div class="col-5">
+                        <img src="https://imgs.search.brave.com/5sc7bWxks-n_gSx50GKexNM_2XpLJG6dPob-B-JpC28/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy81/LzUyL1BoaWxpcHNf/bG9nb19uZXcuc3Zn">
                     </div>
                 </div>
             </div>
-    <!--------Offer-------->
-    <div class="offer">
+        </div>
+    </div>
+
+    <!-- FASHION SECTION -->
+    <div id="sectionFashion" class="section" style="display: none;">
         <div class="small-container">
+            <h2 class="title">Fashion Products</h2>
             <div class="row">
-                <div class="col-2">
-                    <img src="https://imgs.search.brave.com/7oCvYFHTlqrtO2e9xagFELUSkyFXdRPa-KfE1lF5P6M/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NDErWTFvejRUTUwu/anBn" class="offer-img">
+                <div class="col-4">
+                    <img src="https://m.media-amazon.com/images/I/71pWx1pV0QL._UX679_.jpg">
+                    <h4>Men's Red T-Shirt</h4>
+                    <p>$50.00</p>
                 </div>
-                <div class="col-2">
-                    <p>Exclusively Available On Amazon</p>
-                    <h1>Smart Band 4</h1>
-                    <small>The Mi Smart Band 4 features a 40% larger
-                        (than Mi Band 3) AMOLED color full-touch display with
-                        adjustable brightness, so everything is clear as can
-                         be.</small>
-                         <br>
-                         <a href="" class="btn">Buy Now &#8594;</a>
-                 </div>
+                <div class="col-4">
+                    <img src="https://m.media-amazon.com/images/I/71IVxYVJxbL._UY679_.jpg">
+                    <h4>Puma Grip Shoes</h4>
+                    <p>$80.00</p>
+                </div>
             </div>
         </div>
     </div>
 
-    <!------testimonial----->
-    <div class="testimonial">
+    <!-- ELECTRONICS SECTION -->
+    <div id="sectionElectronics" class="section" style="display: none;">
         <div class="small-container">
-        <div class="row">
-            <div class="col-3">
-                <i class="fa fa-quote-left"></i>
-                <p>Lorem Ipsum is simply dummy text of the printing 
-                    and typesetting industry. Lorem Ipsum has been the
-                     industry's standard dummy text ever</p>
-                     <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-    
-                    <h3>Omi parker</h3>
-                </div>
-                <div class="col-3">
-                    <i class="fa fa-quote-left"></i>
-                    <p>Lorem Ipsum is simply dummy text of the printing 
-                        and typesetting industry. Lorem Ipsum has been the
-                         industry's standard dummy text ever</p>
-                         <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                        </div>
-                        <h3>sam John</h3>
-                    </div>
-                    <div class="col-3">
-                        <i class="fa fa-quote-left"></i>
-                        <p>Lorem Ipsum is simply dummy text of the printing 
-                            and typesetting industry. Lorem Ipsum has been the
-                             industry's standard dummy text ever</p>
-                             <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                            </div>
-                            <h3>Marbel Joe</h3>
-                        </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-------------brands-------------->
-    <div class="brands">
-        <div class="small-container">
+            <h2 class="title">Electronics</h2>
             <div class="row">
-                <div class="col-5">
-                    <img src="https://imgs.search.brave.com/kiPgS3PJilewW0FvNb7sRLAgwTdwg-6_TcXLCS1jK30/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zZWVr/bG9nby5jb20vaW1h/Z2VzL0cvR29kcmVq/LWxvZ28tQTM0MDdC/RTI2Qi1zZWVrbG9n/by5jb20ucG5n">
+                <div class="col-4">
+                    <img src="https://m.media-amazon.com/images/I/81q6pkZA-wL._AC_UF1000,1000_QL80_.jpg">
+                    <h4>iPhone 13 Pro</h4>
+                    <p>$1200.00</p>
                 </div>
-                <div class="col-5">
-                    <img src="https://imgs.search.brave.com/gJeGGe9AzSU2OaSG_w373ezUeOhRmbtnNb4z-9zMEsI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9wYXlwYWwtbG9n/by1kZXNpZ25fMTMx/NTk3MS0zMjM5Lmpw/Zz9zZW10PWFpc19o/eWJyaWQ">
-                </div>
-                <div class="col-5">
-                    <img src="https://imgs.search.brave.com/Fu99r2eAbJMpxi5XqJYKs92Q-jqxJPkOFdTX3PO3hss/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/bW9zLmNtcy5mdXR1/cmVjZG4ubmV0Lzhz/dEg1UVpRcmlvd1Jk/emlZcEs2U1ktMTAw/MC04MC5qcGc">
-                </div>
-                <div class="col-5">
-                    <img src="https://imgs.search.brave.com/6Gm5hAj1bc2klEhYM65hc2LcfMo7BUR3T09kVQrYMVw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sb2dv/d2lrLmNvbS9jb250/ZW50L3VwbG9hZHMv/aW1hZ2VzL29wcG8u/anBn">
-                </div>
-                <div class="col-5">
-                    <img src="https://imgs.search.brave.com/5sc7bWxks-n_gSx50GKexNM_2XpLJG6dPob-B-JpC28/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy81/LzUyL1BoaWxpcHNf/bG9nb19uZXcuc3Zn">
+                <div class="col-4">
+                    <img src="https://m.media-amazon.com/images/I/71T5NVOgbpL._AC_UF1000,1000_QL80_.jpg">
+                    <h4>Dell Inspiron</h4>
+                    <p>$1300.00</p>
                 </div>
             </div>
         </div>
     </div>
 
-
-    <!--------------footer------------>
-        <div class="footer">
+    <!-- ACCOUNT SECTION -->
+    <div id="sectionAccount" class="section" style="display: none;">
+        <div class="account-page">
             <div class="container">
                 <div class="row">
-                    <div class="footer-col-1">
-                        <h3>Download our App</h3>
-                        <p>Download App for Android and ios mobile device</p>
-                        <div class="app-logo">
-                            <img src="https://imgs.search.brave.com/v2L4ocdEXFXzTzh7ud8Qwrja-DEmUoRQIj1vnnyJ6gk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzlhLzU5/L2UwLzlhNTllMDkz/ZjA0ZGVjNDIwZDBj/ZDEzOTcyZDUyMWMw/LmpwZw">
-                            <img src="https://imgs.search.brave.com/UKmTHaUaR3QvWtCWTP9lIeHb_DH99teLTnFe8nWVtpY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YXBwbGUuY29tL3Yv/YXBwLXN0b3JlL2Iv/aW1hZ2VzL292ZXJ2/aWV3L2ljb25fYXBw/c3RvcmVfX2V2MHo3/NzB6eXhveV9sYXJn/ZV8yeC5wbmc">
+                    <div class="col-2">
+                        <img src="https://imgs.search.brave.com/gLkqbw3PS2s6x0EnaIuvjFohOJuljWC_brhPcefCcHU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nbWFydC5jb20v/ZmlsZXMvMi9Dcmlz/dGlhbm8tUm9uYWxk/by1UcmFuc3BhcmVu/dC1CYWNrZ3JvdW5k/LnBuZw" width="100%">
+                    </div>
+                    <div class="col-2">
+                        <div class="form-container">
+                            <div class="form-btn">
+                                <span onclick="login()">Login</span>
+                                <span onclick="register()">Register</span> 
+                                <hr id="Indicator">       
+                            </div>
+                            <form id="LoginForm">
+                                <input type="text" placeholder="Username">
+                                <input type="password" placeholder="Password">
+                                <button type="submit" class="btn">Login</button>
+                                <a href="">Forgot Password</a>
+                            </form>
+    
+                            <form id="RegForm">
+                                <input type="text" placeholder="Username">
+                                <input type="email" placeholder="Email">
+                                <input type="password" placeholder="Password">
+                                <button type="submit" class="btn">Register</button>
+                            </form>
                         </div>
                     </div>
-                    <div class="footer-col-2">
-                        <img src="https://imgs.search.brave.com/0F4Za215A-CZ8slTCEVXJ321yzfPUOpUv4-JCW1xPFs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbmdp/bWcuY29tL3VwbG9h/ZHMvYW1hem9uL2Ft/YXpvbl9QTkcyNS5w/bmc" width="125px">
-                        <p>Our Purpose is to Sustainably Make the Pleasure and 
-                           benefits of sports Accessible to the Many.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CART SECTION -->
+    <div id="sectionCart" class="section" style="display: none;">
+        <div class="small-container cart-page">
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>                  
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="C:/Users/Dell/Desktop/image_pi/pi14.jpeg">
+                            <div>
+                                <p>OnePlus Nord CE 2 5G</p>
+                                <small>Price: $400.00</small>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>$400.00</td>
+                </tr>
+               
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="C:/Users/Dell/Desktop/RedStore_Img/images/buy-1.jpg">
+                            <div>
+                                <p>Red Printed Tshirt</p>
+                                <small>Price: $50.00</small>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>$50.00</td>
+                </tr>
+               
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="C:/Users/Dell/Desktop/image_pi/pi25.jpeg">
+                            <div>
+                                <p>Redmi Note 11 Pro + 5G</p>
+                                <small>Price: $400.00</small>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>$400.00</td>
+                </tr>
+            </table>
+
+            <div class="total-price">
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>$850.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tax</td>
+                        <td>$30.00</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>$880.00</td>
+                    </tr>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <div id="sectionAbout" class="section" style="display: none;">
+            <div class="d-flex flex-row container">
+                <div class="content-section">
+                    <div class="title">
+                        <h1>About Us</h1>
                     </div>
-                    <div class="footer-col-3">
-                        <h3>Useful Links</h3>
-                        <ul>
-                            <li>Coupons</li>
-                            <li>Blog Post</li>
-                            <li>Return Policy</li>
-                            <li>Join Affiliate</li>
-                        </ul>
+                    <div class="content">
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                        <div class="button">
+                            <a href="">Read More</a>
+                        </div>
                     </div>
-                    <div class="footer-col-4">
-                        <h3>Follow Us</h3>
-                        <ul>
-                            <li>Facebook</li>
-                            <li>Twitter</li>
-                            <li>instagram</li>
-                            <li>YouTube</li>
-                        </ul>
+                    <div class="social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
                     </div>
                 </div>
-                <hr>
-                <p class="copyright">Copyright 2022 - PiTech Solutions</p>
-            </div>          
-        </div>
+                <div class="image-section">
+                    <img src="https://imgs.search.brave.com/7TnsoqVZKwObN6OD9T_olIcv5-V-13PuuW2Rljo4DK0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTM4/Njg2NjQ3OS9waG90/by9zbWlsaW5nLWNv/bmZpZGVudC1jYXVj/YXNpYW4teW91bmct/YnVzaW5lc3N3b21h/bi1hdWRpdG9yLXdy/aXRpbmctb24tY2xp/cGJvYXJkLXNpZ25p/bmctY29udHJhY3Qu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PVczMWZhMW53ME5r/Z241MkhDM1ZKTEhj/MWV4YlFxVXFVNjlE/S0NqcHhwUTQ9">
+                </div>
+            </div>
+    </div>
 
-<!-----------JS for Toggle Menu------------>
-        <script>
+    <!-- CONTACT SECTION -->
+    <div id="sectionContact" class="section" style="display: none;">
+        <div class="wrapper">
+            <h1>Contact Us Page</h1>
+            <p>Reach out us, We are waiting to interact with you.</p>
+            <div class="contactus">
+                <div class="input_wrapper input_wrapper_top">
+                    <div class="input_item">
+                        <input type="text" placeholder="Your Name">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="input_item">
+                        <input type="text" placeholder="Your Email">
+                        <i class="fas fa-at"></i>
+                    </div>
+                </div>
+                <div class="input_wrapper input_wrapper_bottom">
+                    <div class="input_item">
+                        <input type="text" placeholder="Your Subject">
+                        <i class="fas fa-sticky-note"></i>
+                    </div>
+                    <div class="input_item">
+                        <input type="text" placeholder="Your Phone">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                </div>
+                <div class="message_wrapper">
+                    <textarea placeholder="Your Message"></textarea>
+                    <i class="fas fa-envelope-open"></i>
+                </div>
+                <div class="btn"><a href="#">send</a></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <p>Download App for Android and ios mobile device</p>
+                    <div class="app-logo">
+                        <img src="https://imgs.search.brave.com/v2L4ocdEXFXzTzh7ud8Qwrja-DEmUoRQIj1vnnyJ6gk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzlhLzU5/L2UwLzlhNTllMDkz/ZjA0ZGVjNDIwZDBj/ZDEzOTcyZDUyMWMw/LmpwZw">
+                        <img src="https://imgs.search.brave.com/UKmTHaUaR3QvWtCWTP9lIeHb_DH99teLTnFe8nWVtpY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YXBwbGUuY29tL3Yv/YXBwLXN0b3JlL2Iv/aW1hZ2VzL292ZXJ2/aWV3L2ljb25fYXBw/c3RvcmVfX2V2MHo3/NzB6eXhveV9sYXJn/ZV8yeC5wbmc">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="https://imgs.search.brave.com/0F4Za215A-CZ8slTCEVXJ321yzfPUOpUv4-JCW1xPFs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbmdp/bWcuY29tL3VwbG9h/ZHMvYW1hem9uL2Ft/YXpvbl9QTkcyNS5w/bmc" width="125px">
+                    <p>Our Purpose is to Sustainably Make the Pleasure and 
+                       benefits of sports Accessible to the Many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2022 - PiTech Solutions</p>
+        </div>          
+    </div>
+
+
+    <!-- JavaScript -->
+    <script>
+        function menutoggle() {
             var MenuItems = document.getElementById("MenuItems");
-            MenuItems.style.maxHeight = "0px";
-            function menutoggle() {
-                if(MenuItems.style.maxHeight == "0px")
-                {
-                    MenuItems.style.maxHeight = "250px";
-                }
-                else{
-                    MenuItems.style.maxHeight = "0px";
-                }
+            if (MenuItems.style.maxHeight === "0px") {
+                MenuItems.style.maxHeight = "250px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
             }
-        </script>
+        }
+
+        function showSection(sectionId) {
+            // Hide all sections
+            let sections = document.getElementsByClassName('section');
+            for (let section of sections) {
+                section.style.display = 'none';
+            }
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
 
 </body>
 </html>
