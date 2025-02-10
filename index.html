@@ -32,7 +32,7 @@
                     <li><a href="#" onclick="showSection('sectionAbout')">About</a></li>
                     <li><a href="#" onclick="showSection('sectionContact')">Contact</a></li>
                     <li><a href="#" onclick="showSection('sectionAccount')">Account</a></li>
-                    <li><a href="#" onclick="showSection('sectionCart')">Cart</a></li>
+                    <!-- <li><a href="#" onclick="showSection('sectionCart')">Cart</a></li> -->
                 </ul>
             </nav>
             <a href="#" onclick="showSection('sectionCart')">
@@ -59,15 +59,28 @@
     <!-- HOME SECTION -->
     <div id="sectionHome" class="section">
         <div class="container">
+            <input type="text" id="freshSearch" class="fresh-search" placeholder="Search Fresh Items...">
             <div class="row">
                 <div class="col-2">
                     <h1>Give Your Workout<br>A New Style!</h1>
                     <p>Success isn't always about greatness. It's about consistency.<br>Consistent hard work gains success. Greatness will come.</p>
                     <a href="#" class="btn" onclick="showSection('sectionFashion')">Explore Now &#8594;</a>
+                    <input type="text" id="fashionSearch" class="fashion-search" placeholder=" Search items"> 
                 </div>
                 <div class="col-2">
                     <img style="height:750px;width:800px;" src="https://imgs.search.brave.com/gLkqbw3PS2s6x0EnaIuvjFohOJuljWC_brhPcefCcHU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nbWFydC5jb20v/ZmlsZXMvMi9Dcmlz/dGlhbm8tUm9uYWxk/by1UcmFuc3BhcmVu/dC1CYWNrZ3JvdW5k/LnBuZw">
                 </div>
+            </div>
+        </div>
+        <div class="chat-popup">
+            <div class="chat-header">
+                <h4>AI Assistant</h4>
+                <span class="close-btn">✕</span>
+            </div>
+            <div class="chat-body">
+            </div>
+            <div class="chat-footer">
+                <input type="text" class="chat-input" placeholder="Type a message...">
             </div>
         </div>
         <div class="categories">
@@ -142,8 +155,9 @@
             <h2 class="title">Latest products</h2>
             <div class="row">
                 <div style="text-align:center;" class="col-4">
-                    <a href="fashion product1.html"> <img style="height:300px;width: 200px;" src="https://imgs.search.brave.com/s4FaSwkHb5PsApap_TjXAIQZWmUnEUMH7gI2tX2wEFw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzFVTDBVOHBHQ0wu/anBn"></a>
-                    <a href="fashion product1.html"> <h4>Red Printed T-Shirt</h4></a>
+                    <a href="#" onclick="showSection('sectionPro1')"> 
+                        <img style="height:300px;width: 200px;" src="https://imgs.search.brave.com/s4FaSwkHb5PsApap_TjXAIQZWmUnEUMH7gI2tX2wEFw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzFVTDBVOHBHQ0wu/anBn"/>
+                        <h4>Red Printed T-Shirt</h4></a>
                     <div class="rating">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
