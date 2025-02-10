@@ -871,86 +871,148 @@
     
 
     <!-- CART SECTION -->
-    <div id="sectionCart" class="section" style="display: none;">
-        <div class="small-container cart-page">
+<div id="sectionCart" class="section" style="display: none;">
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>                  
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="https://imgs.search.brave.com/UOEQMIAI-4635qvZIMLq5JEix9t273xLoY6tAkTto2k/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9mZG4y/LmdzbWFyZW5hLmNv/bS92di9iaWdwaWMv/b25lcGx1cy1ub3Jk/LWNlNC0uanBn">
+                        <div>
+                            <p>OnePlus Nord CE 2 5G</p>
+                            <small>Price: $400.00</small>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$400.00</td>
+            </tr>
+           
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="https://imgs.search.brave.com/s4FaSwkHb5PsApap_TjXAIQZWmUnEUMH7gI2tX2wEFw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzFVTDBVOHBHQ0wu/anBn">
+                        <div>
+                            <p>Red Printed Tshirt</p>
+                            <small>Price: $50.00</small>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$50.00</td>
+            </tr>
+           
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="https://imgs.search.brave.com/yZjuXiIJn2iXgtXCKDMYJ3o11SKsT7vtfT-MFCZ-rVM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTF4cUhGNjNuc0wu/anBn">
+                        <div>
+                            <p>Redmi Note 11 Pro + 5G</p>
+                            <small>Price: $400.00</small>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$400.00</td>
+            </tr>
+        </table>
+
+        <div class="total-price">
             <table>
                 <tr>
-                    <th>Product</th>
-                    <th>Quantity</th>
-                    <th>Subtotal</th>                  
+                    <td>Subtotal</td>
+                    <td>$850.00</td>
                 </tr>
                 <tr>
-                    <td>
-                        <div class="cart-info">
-                            <img src="https://imgs.search.brave.com/UOEQMIAI-4635qvZIMLq5JEix9t273xLoY6tAkTto2k/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9mZG4y/LmdzbWFyZW5hLmNv/bS92di9iaWdwaWMv/b25lcGx1cy1ub3Jk/LWNlNC0uanBn">
-                            <div>
-                                <p>OnePlus Nord CE 2 5G</p>
-                                <small>Price: $400.00</small>
-                                <a href="">Remove</a>
-                            </div>
-                        </div>
-                    </td>
-                    <td><input type="number" value="1"></td>
-                    <td>$400.00</td>
+                    <td>Tax</td>
+                    <td>$30.00</td>
                 </tr>
-               
                 <tr>
-                    <td>
-                        <div class="cart-info">
-                            <img src="https://imgs.search.brave.com/s4FaSwkHb5PsApap_TjXAIQZWmUnEUMH7gI2tX2wEFw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzFVTDBVOHBHQ0wu/anBn">
-                            <div>
-                                <p>Red Printed Tshirt</p>
-                                <small>Price: $50.00</small>
-                                <a href="">Remove</a>
-                            </div>
-                        </div>
-                    </td>
-                    <td><input type="number" value="1"></td>
-                    <td>$50.00</td>
-                </tr>
-               
-                <tr>
-                    <td>
-                        <div class="cart-info">
-                            <img src="https://imgs.search.brave.com/yZjuXiIJn2iXgtXCKDMYJ3o11SKsT7vtfT-MFCZ-rVM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTF4cUhGNjNuc0wu/anBn">
-                            <div>
-                                <p>Redmi Note 11 Pro + 5G</p>
-                                <small>Price: $400.00</small>
-                                <a href="">Remove</a>
-                            </div>
-                        </div>
-                    </td>
-                    <td><input type="number" value="1"></td>
-                    <td>$400.00</td>
+                    <td>Total</td>
+                    <td>$880.00</td>
                 </tr>
             </table>
-    
-            <div class="total-price">
-                <table>
-                    <tr>
-                        <td>Subtotal</td>
-                        <td>$850.00</td>
-                    </tr>
-                    <tr>
-                        <td>Tax</td>
-                        <td>$30.00</td>
-                    </tr>
-                    <tr>
-                        <td>Total</td>
-                        <td>$880.00</td>
-                    </tr>
-                </table>
-            </div>
-    
-            <!-- Checkout Button -->
-            <button id="checkoutBtn" class="checkout-button">Proceed to Checkout</button>
-            
-            <!-- Error Message (Initially Hidden) -->
-            <p id="errorMessage" style="color: red; display: none; margin-top: 10px;">
-                You haven't logged in. Please register to checkout items.
-            </p>
         </div>
+
+        <!-- ₹1 Donation Checkbox (Checked by Default) -->
+        <div class="donation-box">
+            <input type="checkbox" id="donationCheckbox" checked>
+            <label for="donationCheckbox" style="font-weight:bold;">(optional) Donate ₹5 towards Education of Rs.5 an underprivileged girl</label>
+        </div>
+
+        <!-- Payment Method Selection (Misleading) -->
+        <div class="payment-method">
+            <p >Payment Options:</p>
+            <select id="paymentOptions">
+                <option selected style="background-color: green; font-weight: bold;">Cash on Delivery</option>
+                <option>Credit Card</option>
+                <option>Debit Card</option>
+                <option>Net Banking</option>
+                <option>UPI</option>
+            </select>
+        </div>
+
+        <!-- Checkout Button -->
+        <button id="checkoutBtn" class="checkout-button">Proceed to Checkout</button>
+        
+        <!-- Error Message (Initially Hidden) -->
+        <p id="errorMessage" style="color: red; display: none; margin-top: 10px;">
+            You haven't logged in. Please register to checkout items.
+        </p>
+
     </div>
+</div>
+
+        <!-- CSS for Misleading Elements -->
+        <style>
+            .checkout-button {
+                display: block;
+                width: 500px;
+                height:50px;
+                padding: 10px;
+                background-color: red;
+                color: white;
+                text-align: center;
+                border: none;
+                cursor: pointer;
+                font-size: 16px;
+                margin-top: 50px;
+            }
+
+            .checkout-button:hover {
+                background-color: #e74c3c;
+            }
+
+            .donation-box {
+                margin-top: 10px;
+            }
+
+            .payment-method {
+                margin-top: 15px;
+            }
+
+            #paymentOptions {
+                font-size: 18px;
+                font-weight: bold;
+                color: black;
+                padding: 5px;
+            }
+
+            /* Make the default option (Cash on Delivery) stand out in green */
+            #paymentOptions option:first-child {
+                color: green;
+                font-weight: bold;
+            }
+        </style>
+
     
     
     <!-- ABOUT SECTION -->
@@ -1114,6 +1176,9 @@
             // Or Redirect to another page (e.g., "another-page.html")
             // window.location.href = 'another-page.html';
         }
+        document.getElementById("checkoutBtn").addEventListener("click", function() {
+        document.getElementById("errorMessage").style.display = "block";
+        });
     </script>
 
 </body>
