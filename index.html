@@ -43,16 +43,6 @@
     </div>
 </div>
 
-<script>
-    // Function to handle the back button functionality
-    function redirectToPage() {
-        // Example: Redirect to the Home Section
-        showSection('sectionHome');
-
-        // Or Redirect to another page (e.g., "another-page.html")
-        // window.location.href = 'another-page.html';
-    }
-</script>
 
 
 
@@ -867,7 +857,6 @@
                                 <a href="">Remove</a>
                             </div>
                         </div>
-
                     </td>
                     <td><input type="number" value="1"></td>
                     <td>$400.00</td>
@@ -883,7 +872,6 @@
                                 <a href="">Remove</a>
                             </div>
                         </div>
-
                     </td>
                     <td><input type="number" value="1"></td>
                     <td>$50.00</td>
@@ -899,13 +887,12 @@
                                 <a href="">Remove</a>
                             </div>
                         </div>
-
                     </td>
                     <td><input type="number" value="1"></td>
                     <td>$400.00</td>
                 </tr>
             </table>
-
+    
             <div class="total-price">
                 <table>
                     <tr>
@@ -921,11 +908,21 @@
                         <td>$880.00</td>
                     </tr>
                 </table>
-
             </div>
-
+    
+            <!-- Checkout Button -->
+            <button id="checkoutBtn" class="checkout-button">Proceed to Checkout</button>
+            
+            <!-- Error Message (Initially Hidden) -->
+            <p id="errorMessage" style="color: red; display: none; margin-top: 10px;">
+                You haven't logged in. Please register to checkout items.
+            </p>
         </div>
     </div>
+    
+    
+    
+    
 
     <!-- ABOUT SECTION -->
     <div id="sectionAbout" class="section" style="display: none;">
@@ -1053,6 +1050,17 @@
             }
             // Show the selected section
             document.getElementById(sectionId).style.display = 'block';
+        }
+        document.getElementById("checkoutBtn").addEventListener("click", function() {
+            document.getElementById("errorMessage").style.display = "block";
+        });
+        // Function to handle the back button functionality
+        function redirectToPage() {
+            // Example: Redirect to the Home Section
+            showSection('sectionHome');
+
+            // Or Redirect to another page (e.g., "another-page.html")
+            // window.location.href = 'another-page.html';
         }
     </script>
 
