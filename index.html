@@ -10,29 +10,51 @@
 </head>
 <body>
 
-    <!-- HEADER / NAVIGATION -->
-    <div class="header">
-        <div class="container">
-            <div class="navbar">
-                <div class="logo">
-                    <a href="#"><img src="https://pnggrid.com/wp-content/uploads/2024/11/Amazon-Logo-Transparent-1536x308.png" width="125px"></a>
-                </div>
-                <nav>
-                    <ul id="MenuItems">
-                        <li><a href="#" onclick="showSection('sectionHome')">Home</a></li>
-                        <li><a href="#" onclick="showSection('sectionFashion')">Fashion</a></li>
-                        <li><a href="#" onclick="showSection('sectionElectronics')">Electronics</a></li>
-                        <li><a href="#" onclick="showSection('sectionAbout')">About</a></li>
-                        <li><a href="#" onclick="showSection('sectionContact')">Contact</a></li>
-                        <li><a href="#" onclick="showSection('sectionAccount')">Account</a></li>
-                        <li><a href="#" onclick="showSection('sectionCart')">Cart</a></li>
-                    </ul>
-                </nav>
-                <a href="#" onclick="showSection('sectionCart')"><img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" width="30px"></a>
-                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" class="menu-icon" onclick="menutoggle()">
+<!-- HEADER / NAVIGATION -->
+<div class="header">
+    <div class="container">
+        <div class="navbar">
+            <!-- Back Button -->
+            <a href="#" onclick="redirectToPage()" style="display: flex; align-items: center; margin-right: 10px;">
+                <img src="https://cdn-icons-png.flaticon.com/512/93/93634.png" width="30px" alt="Back">
+            </a>
+            <!-- Amazon Logo -->
+            <div class="logo">
+                <a href="#" onclick="showSection('sectionHome')">
+                    <img src="https://pnggrid.com/wp-content/uploads/2024/11/Amazon-Logo-Transparent-1536x308.png" width="125px" alt="Amazon Logo">
+                </a>
             </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="#" onclick="showSection('sectionHome')">Home</a></li>
+                    <li><a href="#" onclick="showSection('sectionFashion')">Fashion</a></li>
+                    <li><a href="#" onclick="showSection('sectionElectronics')">Electronics</a></li>
+                    <li><a href="#" onclick="showSection('sectionAbout')">About</a></li>
+                    <li><a href="#" onclick="showSection('sectionContact')">Contact</a></li>
+                    <li><a href="#" onclick="showSection('sectionAccount')">Account</a></li>
+                    <li><a href="#" onclick="showSection('sectionCart')">Cart</a></li>
+                </ul>
+            </nav>
+            <a href="#" onclick="showSection('sectionCart')">
+                <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" width="30px" alt="Cart">
+            </a>
+            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" class="menu-icon" onclick="menutoggle()">
         </div>
     </div>
+</div>
+
+<script>
+    // Function to handle the back button functionality
+    function redirectToPage() {
+        // Example: Redirect to the Home Section
+        showSection('sectionHome');
+
+        // Or Redirect to another page (e.g., "another-page.html")
+        // window.location.href = 'another-page.html';
+    }
+</script>
+
+
 
     <!-- HOME SECTION -->
     <div id="sectionHome" class="section">
@@ -447,7 +469,7 @@
         
                 <div class="row">
                     <div class="col-4">
-                        <img src="C:/Users/Dell/Desktop/image_pi/rrr5.jpeg">
+                        <img src="https://k9casual.com/wp-content/uploads/2022/09/25-1.jpg">
                         <h4>Dashing Men's T-Shirt</h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
@@ -459,7 +481,7 @@
                         <p>$70.00</p>
                     </div>
                     <div class="col-4">
-                        <img src="C:/Users/Dell/Desktop/RedStore_Img/images/product-6.jpg">
+                        <img src="https://images.bestsellerclothing.in/data/selected/19-dec-2022/127278002_1.jpg?width=1080&height=1355&mode=fill&fill=blur&format=auto">
                         <h4>Men's Black T-Shirt</h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
@@ -471,7 +493,7 @@
                         <p>$80.00</p>
                     </div>
                     <div class="col-4">
-                        <img src="C:/Users/Dell/Desktop/image_pi/rrr1.jpeg">
+                        <img src="https://assets.ajio.com/medias/sys_master/root/20240814/BlhH/66bcb0751d763220fa7acea3/-473Wx593H-469675491-pinkmix-MODEL.jpg">
                         <h4>Men's Mix T-Shirt</h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
@@ -483,7 +505,7 @@
                         <p>$60.00</p>
                     </div>
                     <div class="col-4">
-                        <img src="C:/Users/Dell/Desktop/image_pi/rrr3.jpeg">
+                        <img src="https://rukminim2.flixcart.com/image/850/1000/kzvlua80hlty2aw/t-shirt/4/4/m/l-ct02221506-rigo-original-imagbwqwzamrygvg.jpeg?q=90&crop=false">
                         <h4>Dashing Men's T-Shirt</h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
@@ -502,20 +524,20 @@
         <div class="small-container single-product">
             <div class="row">
                 <div class="col-2">
-                    <img src="C:/Users/Dell/Desktop/image_pi/pi25.jpeg" width="100%" id="ProductImg">
+                    <img src="https://static.toiimg.com/thumb/msid-89962520,width-1280,height-720,imgsize-22406,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg" width="100%" id="ProductImg">
 
                     <div class="small-img-row">
                         <div class="small-img-col">
-                            <img src="C:/Users/Dell/Desktop/image_pi/pi25.jpeg" width="100%" class="small-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeqJE0HqXkT3kZhyheFS5Ew7mQqF3Kyvw68w&s" width="100%" class="small-img">
                         </div>
                         <div class="small-img-col">
-                            <img src="C:/Users/Dell/Desktop/image_pi/pi27.jpeg" width="100%" class="small-img">
+                            <img src="https://m.media-amazon.com/images/I/71lx0qz7rFL.jpg" width="100%" class="small-img">
                         </div>
                         <div class="small-img-col">
-                            <img src="C:/Users/Dell/Desktop/image_pi/pi26.jpeg" width="100%" class="small-img">
+                            <img src="https://www.financialexpress.com/wp-content/uploads/2022/01/redmi-pro.jpg" width="100%" class="small-img">
                         </div>
                         <div class="small-img-col">
-                            <img src="C:/Users/Dell/Desktop/image_pi/pi28.jpeg" width="100%" class="small-img">
+                            <img src="https://i01.appmifile.com/webfile/globalimg/products/m/redmi-note-11-pro-5g/specs-header.png" width="100%" class="small-img">
                         </div>
                     </div>
                 </div>
@@ -549,7 +571,7 @@
         
                 <div class="row">
                     <div class="col-4">
-                        <img src="C:/Users/Dell/Desktop/image_pi/pi20.jpeg">
+                        <img src="https://m.media-amazon.com/images/I/61zLTgALk-L._AC_UF1000,1000_QL80_.jpg">
                         <h4>Oppo Reno 7 5G</h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
@@ -561,7 +583,7 @@
                         <p>$350.00</p>
                     </div>
                     <div class="col-4">
-                        <img src="C:/Users/Dell/Desktop/image_pi/pi29.jpeg">
+                        <img src="https://m.media-amazon.com/images/I/71lx0qz7rFL.jpg">
                         <h4>Redmi Note 11 pro + 5G</h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
@@ -573,7 +595,7 @@
                         <p>$400.00</p>
                     </div>
                     <div class="col-4">
-                        <img src="C:/Users/Dell/Desktop/image_pi/pi31.jpeg">
+                        <img src="https://m.media-amazon.com/images/I/71Od5yJbohL.jpg">
                         <h4>Xiaomi 11T Max</h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
@@ -585,7 +607,7 @@
                         <p>$420.00</p>
                     </div>
                     <div class="col-4">
-                        <img src="C:/Users/Dell/Desktop/image_pi/pi36.jpeg">
+                        <img src="https://m.media-amazon.com/images/I/71VQXjN6R7S.jpg">
                         <h4>Mi 11X + 5G</h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
